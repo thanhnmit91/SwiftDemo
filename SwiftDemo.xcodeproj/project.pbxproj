@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		C3BB8D8523A9D811007CFE24 /* SwiftDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BB8D8323A9D811007CFE24 /* SwiftDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3BB8D8C23A9D824007CFE24 /* SwiftDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB8D8B23A9D824007CFE24 /* SwiftDemo.swift */; };
+		C3BB8D8E23A9D93C007CFE24 /* Podspec in Resources */ = {isa = PBXBuildFile; fileRef = C3BB8D8D23A9D93C007CFE24 /* Podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C3BB8D8023A9D811007CFE24 /* SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BB8D8323A9D811007CFE24 /* SwiftDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftDemo.h; sourceTree = "<group>"; };
 		C3BB8D8423A9D811007CFE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3BB8D8B23A9D824007CFE24 /* SwiftDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemo.swift; sourceTree = "<group>"; };
+		C3BB8D8D23A9D93C007CFE24 /* Podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				C3BB8D8323A9D811007CFE24 /* SwiftDemo.h */,
 				C3BB8D8423A9D811007CFE24 /* Info.plist */,
+				C3BB8D8B23A9D824007CFE24 /* SwiftDemo.swift */,
+				C3BB8D8D23A9D93C007CFE24 /* Podspec */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					C3BB8D7F23A9D811007CFE24 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -121,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BB8D8E23A9D93C007CFE24 /* Podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BB8D8C23A9D824007CFE24 /* SwiftDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		C3BB8D8923A9D811007CFE24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vision.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +294,7 @@
 		C3BB8D8A23A9D811007CFE24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
